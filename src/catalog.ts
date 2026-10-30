@@ -1,0 +1,23 @@
+export const money = (value: number) => new Intl.NumberFormat('es-PE', { style: 'currency', currency: 'PEN' }).format(value);
+export const catalog = [
+ {id:'p1',name:'Zapatillas Urban Move',price:189.90,stock:12,category:'Lifestyle',image:'/images/p1.jpg',description:'Tu ciudad. Tu ritmo. Tu mejor paso.',tag:'Favorito',color:'peach'},
+ {id:'p2',name:'Mochila Everyday',price:129.90,stock:8,category:'Lifestyle',image:'/images/p2.jpg',description:'Todo lo que necesitas, siempre contigo.',tag:'Esencial',color:'sand'},
+ {id:'p3',name:'Audífonos Studio Wireless',price:249.90,stock:10,category:'Tecnología',image:'/images/p3.jpg',description:'Dale play a tu propio mundo.',tag:'Más deseado',color:'lavender'},
+ {id:'p4',name:'Reloj Minimal Time',price:219.90,stock:7,category:'Tecnología',image:'/images/p4.jpg',description:'Cada minuto tiene algo que contar.',tag:'Nuevo',color:'mint'},
+ {id:'p5',name:'Cámara Creative Moments',price:349.90,stock:5,category:'Tecnología',image:'/images/p5.jpg',description:'Tus mejores momentos merecen quedarse.',tag:'Selección nóva',color:'sand'},
+ {id:'p6',name:'Lentes Weekend',price:89.90,stock:15,category:'Lifestyle',image:'/images/p6.jpg',description:'Otra forma de ver los días de sol.',tag:'Esencial',color:'peach'},
+ {id:'p7',name:'Lámpara Nordic',price:159.90,stock:6,category:'Hogar',image:'/images/p7.jpg',description:'Una luz cálida para tus grandes ideas.',tag:'Nuevo',color:'mint'},
+ {id:'p8',name:'Parlante Sound Pocket',price:139.90,stock:9,category:'Tecnología',image:'/images/p8.jpg',description:'Buena música. Donde tú quieras.',tag:'Favorito',color:'lavender'},
+ {id:'p9',name:'Sillón Soft Living',price:649.90,stock:4,category:'Hogar',image:'/images/p9.jpg',description:'Tu nuevo lugar favorito para pausar.',tag:'Selección nóva',color:'sand'},
+ {id:'p10',name:'Teclado Creative Desk',price:179.90,stock:8,category:'Tecnología',image:'/images/p10.jpg',description:'Haz espacio para tu próxima idea.',tag:'Nuevo',color:'mint'},
+ {id:'p11',name:'Botella Daily Hydration',price:69.90,stock:14,category:'Lifestyle',image:'/images/p11.jpg',description:'Un pequeño hábito que va contigo.',tag:'Esencial',color:'lavender'},
+ {id:'p12',name:'Taza Slow Morning',price:49.90,stock:18,category:'Hogar',image:'/images/p12.jpg',description:'Las buenas mañanas empiezan despacio.',tag:'Favorito',color:'peach'},
+ {id:'p13',name:'Laptop Work Anywhere',price:2499.90,stock:6,category:'Tecnología',image:'/images/p13.jpg',description:'Tu espacio creativo, donde quieras.',tag:'Nuevo',color:'lavender'},
+ {id:'p14',name:'Monitor Vision Desk',price:799.90,stock:5,category:'Tecnología',image:'/images/p14.jpg',description:'Una nueva perspectiva para tus ideas.',tag:'Nuevo',color:'mint'},
+ {id:'p15',name:'Mouse Precision',price:89.90,stock:18,category:'Tecnología',image:'/images/p15.jpg',description:'Comodidad y control en cada movimiento.',tag:'Esencial',color:'lavender'},
+ {id:'p16',name:'Earbuds Air Sound',price:179.90,stock:14,category:'Tecnología',image:'/images/p16.jpg',description:'Tu banda sonora, sin cables de por medio.',tag:'Nuevo',color:'sand'},
+ {id:'p17',name:'Café Ritual de Mañana',price:39.90,stock:22,category:'Hogar',image:'/images/p17.jpg',description:'Un buen día comienza con un buen café.',tag:'Selección nóva',color:'peach'},
+ {id:'p18',name:'Maceta Green Corner',price:59.90,stock:12,category:'Hogar',image:'/images/p18.jpg',description:'Un poco de naturaleza en tu rincón favorito.',tag:'Nuevo',color:'mint'},
+ {id:'p19',name:'Perfume Essence',price:149.90,stock:9,category:'Lifestyle',image:'/images/p19.jpg',description:'Ese detalle que deja una buena impresión.',tag:'Selección nóva',color:'lavender'},
+ {id:'p20',name:'Bicicleta City Ride',price:1199.90,stock:4,category:'Lifestyle',image:'/images/p20.jpg',description:'Descubre la ciudad a tu propio ritmo.',tag:'Nuevo',color:'sand'},
+];

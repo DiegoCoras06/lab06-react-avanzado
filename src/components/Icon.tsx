@@ -1,0 +1,6 @@
+﻿import type { CSSProperties } from 'react';
+export type IconName = 'arrow'|'bag'|'heart'|'search'|'close'|'plus'|'minus'|'grid'|'box'|'shield'|'truck'|'spark'|'headphones'|'copy'|'trash';
+const paths: Record<IconName, string> = {
+ arrow:'M4 12h15m-6-6 6 6-6 6', bag:'M5 7h14l1 14H4L5 7Zm3 0V5a4 4 0 0 1 8 0v2', heart:'M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z', search:'m21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0', close:'m6 6 12 12M6 18 18 6', plus:'M12 5v14M5 12h14',minus:'M5 12h14',grid:'M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z',box:'m3 7 9-5 9 5v10l-9 5-9-5V7Zm0 0 9 5 9-5M12 12v10M7 4.8l9 5',shield:'m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6l9-4Zm-4 10 3 3 5-6',truck:'M1 4h13v13H1zM14 9h5l4 5v3h-9M5 17a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm14 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z',spark:'m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Z',headphones:'M3 15v-3a9 9 0 0 1 18 0v3M3 13h4v8H3zM17 13h4v8h-4z',copy:'M9 9h12v12H9zM5 15H3V3h12v2',trash:'M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7'
+};
+export function Icon({name,size=20,style}:{name:IconName;size?:number;style?:CSSProperties}) { return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={style}><path d={paths[name]}/></svg>; }
